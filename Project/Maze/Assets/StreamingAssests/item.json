@@ -2,11 +2,13 @@
 {
  "id": 0,
  "title": "info 1",
- "description": "Just test test info 1"
+ "description": "Just test test info 1",
+ "slug": "infoIcon"
 },
 {
 "id": 1,
  "title": "info 2",
- "description": "Just test info 2"
+ "description": "Just test info 2",
+ "slug": "weapon"
 }
 ]

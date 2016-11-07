@@ -26,7 +26,7 @@ public class Activate : MonoBehaviour {
 		if (Code.text == "54321") {//cheking if typing count number is correct
 
 			Debug.Log ("Correct");
-			Application.LoadLevel (scene);
+			//Application.LoadLevel (scene);
 
 		} else { //if code is incorrect
 

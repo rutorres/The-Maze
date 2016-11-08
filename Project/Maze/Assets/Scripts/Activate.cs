@@ -23,9 +23,13 @@ public class Activate : MonoBehaviour {
 
 	public void OnMouseDown()
 	{
-		if (Code.text == "54321") {//cheking if typing count number is correct
+		if (Code.text == "5") {//cheking if typing count number is correct
 
 			Debug.Log ("Correct");
+			Movement2D player = gameObject.GetComponent<Movement2D> ();
+			Debug.Log("ok");
+			Destroy(GameObject.FindWithTag("Door1"));
+			Destroy(GameObject.FindWithTag("Keypad"));
 			//Application.LoadLevel (scene);
 
 		} else { //if code is incorrect

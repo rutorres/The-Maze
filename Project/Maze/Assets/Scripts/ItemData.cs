@@ -42,7 +42,6 @@ public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         this.transform.SetParent(inv.slots[slot].transform);
         this.transform.position = inv.slots[slot].transform.position;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
-        //this.transform.localScale = new Vector2(1, 1); // solved the dissapearance problem (just a note: I've got a 2D game, you may want to change the Z position (use Vector3) if you've got a 3D game)
     }
 
     public void OnPointerDown(PointerEventData eventData)

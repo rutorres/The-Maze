@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Activate.cs" />
     <Compile Include="Assets\Scripts\ButtonAdd.cs" />
+    <Compile Include="Assets\Scripts\CollectingInfo.cs" />
     <Compile Include="Assets\Scripts\Collide.cs" />
     <Compile Include="Assets\Scripts\Delete.cs" />
     <Compile Include="Assets\Scripts\DoorButtonScript.cs" />

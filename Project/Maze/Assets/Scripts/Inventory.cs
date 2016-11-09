@@ -28,8 +28,8 @@ void Start()
             slots[i].GetComponent<Slot>().id = i;
 			slots[i].transform.SetParent(slotPanel.transform);
 		}
-		AddItem (1);
-		AddItem (0);
+		//AddItem (1);
+		//AddItem (0);
     }
 
 	public void AddItem(int id)
@@ -47,7 +47,7 @@ void Start()
                 itemObj.transform.position = Vector2.zero;
                 itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
                 itemObj.name = itemToAdd.Title;
-				break;
+				//break;
 			}
 		}
 	}

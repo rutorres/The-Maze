@@ -25,11 +25,12 @@ void Start()
 		{
 			items.Add (new Item ());
 			slots.Add (Instantiate(inventorySlot));
+            slots[i].GetComponent<Slot>().id = i;
 			slots[i].transform.SetParent(slotPanel.transform);
 		}
 		AddItem (1);
 		AddItem (0);
-}
+    }
 
 	public void AddItem(int id)
 	{
@@ -40,6 +41,8 @@ void Start()
 			{
 				items[i] = itemToAdd;
 				GameObject itemObj = Instantiate(inventoryItem);
+                itemObj.GetComponent<ItemData>().item = itemToAdd;
+                itemObj.GetComponent<ItemData>().slot = i;
 				itemObj.transform.SetParent (slots [i].transform);
                 itemObj.transform.position = Vector2.zero;
                 itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;

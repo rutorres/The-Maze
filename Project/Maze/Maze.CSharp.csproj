@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Activate.cs" />
     <Compile Include="Assets\Scripts\ButtonAdd.cs" />
     <Compile Include="Assets\Scripts\CollectingInfo.cs" />
+    <Compile Include="Assets\Scripts\CollectingKey.cs" />
     <Compile Include="Assets\Scripts\Collide.cs" />
     <Compile Include="Assets\Scripts\Delete.cs" />
     <Compile Include="Assets\Scripts\DoorButtonScript.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="Assets\Scripts\ItemDatabase.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\KeyCounterScript.cs" />
+    <Compile Include="Assets\Scripts\KeyData.cs" />
     <Compile Include="Assets\Scripts\KeyDoorScript.cs" />
     <Compile Include="Assets\Scripts\KeyPadSystem.cs" />
     <Compile Include="Assets\Scripts\Movement2D.cs" />

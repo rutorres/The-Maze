@@ -28,5 +28,11 @@
  "title": "info 5",
  "description": "there are two way to finsish the level",
  "slug": "infoIcon"
+},
+{
+"id": 1001,
+ "title": "testKey",
+ "description": "Key to open a door",
+ "slug": "testKey"
 }
 ]

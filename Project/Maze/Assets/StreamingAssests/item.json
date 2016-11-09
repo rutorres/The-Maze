@@ -2,12 +2,18 @@
 {
  "id": 0,
  "title": "info 1",
- "description": "Just test test info 1",
+ "description": "door code. Part1: 56",
  "slug": "infoIcon"
 },
 {
-"id": 1,
+ "id": 1,
  "title": "info 2",
+ "description": "door code. Part2: 30",
+ "slug": "infoIcon"
+},
+{
+"id": 2,
+ "title": "info 3",
  "description": "Just test info 2",
  "slug": "weapon"
 }

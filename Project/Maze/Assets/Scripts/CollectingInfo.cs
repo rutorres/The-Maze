@@ -10,16 +10,28 @@ public class CollectingInfo : MonoBehaviour {
         addInfo = GameObject.Find("Inventory").GetComponent<Inventory>();
     }
 
+
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
         Movement2D avatar = otherCollider.gameObject.GetComponent<Movement2D>();
         if (avatar != null)
         {
-            Destroy(gameObject);
-            addInfo.AddItem(0);
-            Debug.Log("nothing");
+            if(this.gameObject.name=="info1")
+            {
+                addingTheInfo(0);
+            }
+            else if(this.gameObject.name == "info2")
+            {
+                addingTheInfo(1);
+            }
         }
 
+    }
+
+    void addingTheInfo(int id)
+    {
+        Destroy(gameObject);
+        addInfo.AddItem(id);
     }
 }
 

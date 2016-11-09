@@ -44,10 +44,10 @@ void Start()
                 itemObj.GetComponent<ItemData>().item = itemToAdd;
                 itemObj.GetComponent<ItemData>().slot = i;
 				itemObj.transform.SetParent (slots [i].transform);
-                itemObj.transform.position = Vector2.zero;
+                itemObj.transform.position = slots[i].transform.position;// Vector2.zero;
                 itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
                 itemObj.name = itemToAdd.Title;
-				//break;
+				break;
 			}
 		}
 	}

@@ -8,9 +8,6 @@ public class ItemDatabase : MonoBehaviour {
     private JsonData itemData;
 	// Use this for initialization
 	void Start () {
-      //  Item item = new Item(2,"info 3");
-      //  database.Add(item);
-      //  Debug.Log 
         itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/StreamingAssests/item.json"));
 		ConstructItemDatabase();
 	}

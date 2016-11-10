@@ -72,12 +72,30 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Activate.cs" />
+    <Compile Include="Assets\Scripts\ButtonAdd.cs" />
+    <Compile Include="Assets\Scripts\CollectingInfo.cs" />
+    <Compile Include="Assets\Scripts\CollectingKey.cs" />
     <Compile Include="Assets\Scripts\Collide.cs" />
+    <Compile Include="Assets\Scripts\Delete.cs" />
+    <Compile Include="Assets\Scripts\DoorButtonScript.cs" />
+    <Compile Include="Assets\Scripts\DrawLine.cs" />
+    <Compile Include="Assets\Scripts\DrawRectangle.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\ItemData.cs" />
     <Compile Include="Assets\Scripts\ItemDatabase.cs" />
+    <Compile Include="Assets\Scripts\Key.cs" />
+    <Compile Include="Assets\Scripts\KeyCounterScript.cs" />
+    <Compile Include="Assets\Scripts\KeyData.cs" />
+    <Compile Include="Assets\Scripts\KeyDoorScript.cs" />
+    <Compile Include="Assets\Scripts\KeyPadSystem.cs" />
     <Compile Include="Assets\Scripts\Movement2D.cs" />
     <Compile Include="Assets\Scripts\Rotateplayer.cs" />
     <Compile Include="Assets\Scripts\SampleMove2D.cs" />
+    <Compile Include="Assets\Scripts\ScoreScript.cs" />
+    <Compile Include="Assets\Scripts\Slot.cs" />
+    <Compile Include="Assets\Scripts\SlotKey.cs" />
+    <Compile Include="Assets\Scripts\Tooltip.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

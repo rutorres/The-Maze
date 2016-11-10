@@ -9,6 +9,7 @@ public class KeyData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
     public int slot;
     private CollectingKey cKey;
     private Vector2 _offset;
+    Transform originalParent;
 
     void Start()
     {
@@ -18,10 +19,11 @@ public class KeyData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
     {
         if (item != null)
         {
+            originalParent = this.transform.parent;
             _offset = eventData.position - new Vector2(this.transform.position.x, this.transform.position.y);
             this.transform.SetParent(this.transform.parent.parent);
             this.transform.position = eventData.position - _offset;
-            GetComponent<CanvasGroup>().blocksRaycasts = false;
+           // GetComponent<CanvasGroup>().blocksRaycasts = false;
 
         }
     }
@@ -37,9 +39,9 @@ public class KeyData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        this.transform.SetParent(cKey.slots[slot].transform);
+        this.transform.SetParent(originalParent);
         this.transform.position = cKey.slots[slot].transform.position;
-        GetComponent<CanvasGroup>().blocksRaycasts = true;
+      //  GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 
     public void OnPointerDown(PointerEventData eventData)

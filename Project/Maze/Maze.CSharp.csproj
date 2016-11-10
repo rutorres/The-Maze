@@ -94,6 +94,7 @@
     <Compile Include="Assets\Scripts\SampleMove2D.cs" />
     <Compile Include="Assets\Scripts\ScoreScript.cs" />
     <Compile Include="Assets\Scripts\Slot.cs" />
+    <Compile Include="Assets\Scripts\SlotKey.cs" />
     <Compile Include="Assets\Scripts\Tooltip.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />

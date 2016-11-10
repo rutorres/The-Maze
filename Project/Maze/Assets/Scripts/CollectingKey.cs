@@ -35,8 +35,8 @@ public class CollectingKey : MonoBehaviour
             {
                 items[0] = itemToAdd;
                 GameObject itemObj = Instantiate(inventoryItem);
-                itemObj.GetComponent<ItemData>().item = itemToAdd;
-                itemObj.GetComponent<ItemData>().slot = 0;
+                itemObj.GetComponent<KeyData>().item = itemToAdd;
+                itemObj.GetComponent<KeyData>().slot = 0;
                 itemObj.transform.SetParent(slots[0].transform);
                 itemObj.transform.position = slots[0].transform.position;// Vector2.zero;
                 itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
